@@ -18,6 +18,7 @@ Contents
    Hardware
    Wiring diagram
    Tasks
+   Code
    Issues
    Analysis
    Videos
