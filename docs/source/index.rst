@@ -18,6 +18,9 @@ Contents
    Hardware
    Wiring diagram
    Tasks
+   Issues
+   Analysis
+   Videos
    usage
    api
    
