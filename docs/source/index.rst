@@ -21,7 +21,7 @@ Contents
    Introduction
    Hardware
    Wiring Diagram
-   tasks
+   Tasks
    usage
    api
    
