@@ -10,7 +10,8 @@ Coding overview
 ------------------------------------
 We utliliexed cooperative multitasking within our code. This means that we created different tasks within our code that are responsible for specific functions. All the code that we made for this project can be found in our github websited provided below. With our cooperative multitasking we assigned each task an intended run period and priority that would dictate when each task should run.
 
-link: https://github.com/jirehevelasquez/mech-romi-files-
+link: https://github.com/jirehevelasquez/mech-romi-files
+
 
 
 
