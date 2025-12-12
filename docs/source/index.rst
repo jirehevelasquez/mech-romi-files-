@@ -21,7 +21,7 @@ Contents
    Code
    Issues
    Analysis
-   Videos
+   videos
    usage
    api
    
