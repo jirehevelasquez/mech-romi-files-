@@ -4,8 +4,6 @@ Wiring diagram
 Nucleo micro-controller pinout
 --------------------------------
 
-Left Position
-----
 .. figure:: ../../images/nucleo_pinout.png
     :align: center
     :height: 500px
@@ -17,8 +15,6 @@ For the pin designations we used where the ones for the morph board.(dark blue l
 Wiring table
 -------------------------------
 
-Left Position
-----
 .. figure:: ../../images/Romi_pinout.png
     :align: center
     :height: 500px
