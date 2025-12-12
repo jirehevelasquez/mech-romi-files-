@@ -75,8 +75,9 @@ Used off the shelf bump sensors and a PCD designed by Pololu for simple integrat
 
 bluetooth module
 ------------------------
+We used the HC-06 bluetooth module
 
-.. figure:: ../../images/Romi_pinout.png
+.. figure:: ../../images/hc_06.png
    :align: center
    :height: 500px
    :alt: alternate text
