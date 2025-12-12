@@ -8,11 +8,13 @@ we utilized Pololu's 6.5" chassis as the main body for our robot becuase it offe
 Motor and Encoder
 --------------------------
 we Utilized Pololu's gearmotor and encoder assembly. The specific modle we used was Pololu's part number #3675. specifications can be found in the spec sheet provided by Pololu
+
 Link: https://www.pololu.com/product/3675/specs
 
 Micro-controller
 ---------------------------
 The micro-controller that we used to control romi was a NUCLEO-L476rg board that uses a STM32 chip made by texas instrumental. The data sheet for this microcontroller is provided below
+
 link: https://www.st.com/en/evaluation-tools/nucleo-l476rg.html
 
 shoe of brian
