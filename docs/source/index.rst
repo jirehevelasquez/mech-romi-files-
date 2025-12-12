@@ -18,7 +18,9 @@ Contents
 
 .. toctree::
 
+   Introduction
+   Hardware
    usage
    api
-   Hardware
+   
    
