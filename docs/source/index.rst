@@ -20,7 +20,7 @@ Contents
 
    Introduction
    Hardware
-   Wiring Diagram
+   Wiring diagram
    Tasks
    usage
    api
