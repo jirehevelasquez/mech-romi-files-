@@ -20,6 +20,7 @@ Contents
 
    Introduction
    Hardware
+   Wiring Diagram
    usage
    api
    
