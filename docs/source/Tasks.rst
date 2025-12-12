@@ -20,6 +20,7 @@ Manages the simple text-based user interface over the USB/serial REPL. It parses
 
 5. PI_con
 ------------------------------
+The PI task runs the proportional–integral (PI) control loop that turns errors into stable motor commands.It repeatedly compares a setpoint (what you want – speed, heading, or line position) to a measurement (what Romi is actually doing) to compute an error. The task then applies a proportional term (reacts to the current error) and an integral term (reacts to the accumulated past error) to generate a control output. That output is sent to the motor effort shares (or steering command), keeping Romi on target while reducing steady-state error and smoothing out its motion.
 
 
 6. Light
