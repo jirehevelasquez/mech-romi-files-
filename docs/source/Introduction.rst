@@ -8,7 +8,9 @@ Romi is a small differential drive robot that we built utilizing kit parts from 
 
 Coding overview
 ------------------------------------
-We utliliexed cooperative multitasking within our code. This means that we created different tasks within our code that are responsible for specific functions. All the code that we made for this project can be found in our github websited provided below.
+We utliliexed cooperative multitasking within our code. This means that we created different tasks within our code that are responsible for specific functions. All the code that we made for this project can be found in our github websited provided below. With our cooperative multitasking we assigned each task an intended run period and priority that would dictate when each task should run.
+
+link: https://github.com/jirehevelasquez/mech-romi-files-
 
 
 
