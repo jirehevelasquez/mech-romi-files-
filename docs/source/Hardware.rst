@@ -29,7 +29,7 @@ The micro-controller that we used to control romi was a NUCLEO-L476rg board that
 
 link: https://www.st.com/en/evaluation-tools/nucleo-l476rg.html
 
-.. figure:: ../../images/nucleo board.png
+.. figure:: ../../images/nucleo_board.png
    :align: center
    :height: 500px
    :alt: alternate text
