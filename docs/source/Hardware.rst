@@ -89,7 +89,7 @@ light sensors
 We used Polou analog QTR refelctance sensors. to be more specific we used a 3-channel, 4mm pitch analog light sensor provided in the link below
 link: https://www.pololu.com/product/4203
 
-.. figure:: ../../images/Light sensor.png
+.. figure:: ../../images/Light_sensor.png
    :align: center
    :height: 500px
    :alt: alternate text
