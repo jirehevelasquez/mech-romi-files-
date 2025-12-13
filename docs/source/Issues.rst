@@ -8,10 +8,10 @@ In the beginning of this project, we first attempted to connect our bluetooth mo
 2. Burnt Pins on our nucleo board
 --------------------------------
 
-4. Inaccurate state estimaiton 
+3. Inaccurate state estimaiton 
 -------------------------------
 Due to uncontrollable delays between running our different tasks, our IMU task responsible for calculating our state estimation was not able to run at a consistant period leading to unpredictable jumps in our calculated state estimation values. This dramatically increased the error in our system rendering most of our state estimation values not usable due to there shear inaccurace and fluctuations making our track following exponentially more difficult 
 
-5. fluctuationg IMU readings
+4. fluctuationg IMU readings
 -----------------------------
 when Romi got close to the steel cage/garage the imu readings regarding romi's heading became dramatically volatile often ranging plus or minues 80 degrees. Due to this we had to preemptively shut off the imu's yaw reading because it would largely confuse our pre-existing code causeing romi to go off course and crash into the cage. So during this section of the track we were forced to navigate only using our encoder velocitys and known time displacements.
