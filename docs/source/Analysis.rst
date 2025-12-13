@@ -23,8 +23,10 @@ Aubrey write here I dont remeber much about this topic
 
 Finite State Machine Calculations
 ----------------------------------
+To begin to make a state estimation machine for Romi, we first needed to fully characterize the physical dynamics of Romi, which are that romi is a 2 wheel drive robot that is not holonomic. We began by calculating the velocity of the center of mass of romi relative to both wheels and identifyied basic equations that relate both the rotational velocity of romi, and its translational velocity as a function of the wheel velocitys. These equations are represented in our X variable.
 
 .. math::
+
    X =
    \begin{bmatrix}
       \Omega_L \\
@@ -46,6 +48,7 @@ Finite State Machine Calculations
       \psi \\
       \dot{\psi}
    \end{bmatrix}.
+
 
 
 
