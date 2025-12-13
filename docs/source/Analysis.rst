@@ -15,9 +15,12 @@ Once we had a calculated time constant we than began varying our proportional ga
 
 Light Sensor Calibration
 --------------------------------
+In our code, we calibrated our light sensors using both our UI_gen file and our Light file. we accomplished this by prompting the user to place Romi over a section of black paper to represent the black line that Romi would follow. Then while romi is over the black paper, press b, to read from the light sensors casuing those values to be stored and used as a datum. Then after we prompted the user to place romi over a piece of white paper. Where we measured the light sensors to store those values as another datum. After we had stored these values, each instance our light task would run, it could grab the current values from the light sensors and calculate the centroid of the line using the 2 datums to identy where the line was at in that instance. which was then fed into out PI controler.
 
 IMU Calibration
 --------------------------------
+Aubrey write here I dont remeber much about this topic
 
 Finite State Machine Calculations
 ----------------------------------
+
