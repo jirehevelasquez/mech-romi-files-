@@ -13,3 +13,11 @@ Motor KI and KP Tuning
 ------------------------
 Once we had a calculated time constant we than began varying our proportional gain (KP) and integral gain (KI) in our PI controller to idenifty which values lead to the quickest time response with less than 10% overshoot and a steady state value with less than 5% fluctionons of the intended setpoint. 
 
+Light Sensor Calibration
+--------------------------------
+
+IMU Calibration
+--------------------------------
+
+Finite State Machine Calculations
+----------------------------------
