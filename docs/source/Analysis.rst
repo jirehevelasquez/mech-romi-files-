@@ -23,7 +23,7 @@ Aubrey write here I dont remeber much about this topic
 
 Finite State Machine Calculations
 ----------------------------------
-To begin to make a state estimation machine for Romi, we first needed to fully characterize the physical dynamics of Romi, which are that romi is a 2 wheel drive robot that is not holonomic. We began by calculating the velocity of the center of mass of romi relative to both wheels and identifyied basic equations that relate both the rotational velocity of romi, and its translational velocity as a function of the wheel velocitys. These equations are represented in our X variable.
+To begin to make a state estimation machine for Romi, we first needed to fully characterize the physical dynamics of Romi, which are that romi is a 2 wheel drive robot that is not holonomic. We began by calculating the velocity of the center of mass of romi relative to both wheels and identifyied basic equations that relate both the rotational velocity of romi, and its translational velocity as a function of the wheel velocitys. These equations are represented in our X_dot variable, where X represents our wheel positions for both left and right motors, heading value, and arc distance.
 
 .. math::
 
@@ -49,6 +49,43 @@ To begin to make a state estimation machine for Romi, we first needed to fully c
       \dot{\psi}
    \end{bmatrix}.
 
+.. math::
+
+   \dot{X} =
+   \begin{bmatrix}
+      -\dfrac{1}{\tau_m} & 0                   & 0 & 0 \\
+      0                   & -\dfrac{1}{\tau_m} & 0 & 0 \\
+      \dfrac{r}{2}        & \dfrac{r}{2}       & 0 & 0 \\
+      -\dfrac{r}{w}       & \dfrac{r}{w}       & 0 & 0
+   \end{bmatrix}
+   X
+   +
+   \begin{bmatrix}
+      \dfrac{k_m}{\tau_m} & 0 \\
+      0                   & \dfrac{k_m}{\tau_m} \\
+      0                   & 0 \\
+      0                   & 0
+   \end{bmatrix}
+   U
+
+.. math::
+
+   Y =
+   \begin{bmatrix}
+      0 & 0 & 1 & -\dfrac{w}{2} \\
+      0 & 0 & 1 &  \dfrac{w}{2} \\
+      0 & 0 & 0 & 1 \\
+      -\dfrac{r}{w} & \dfrac{r}{w} & 0 & 0
+   \end{bmatrix}
+   X
+   +
+   \begin{bmatrix}
+      0 & 0 \\
+      0 & 0 \\
+      0 & 0 \\
+      0 & 0
+   \end{bmatrix}
+   U
 
 
 
