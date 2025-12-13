@@ -1,4 +1,4 @@
-HARDWARE
+Hardware
 ========================================================
 
 Romi chassis
@@ -35,11 +35,16 @@ link: https://www.st.com/en/evaluation-tools/nucleo-l476rg.html
    :alt: alternate text
 
 
-shoe of brian
+Shoe of Brian
 --------------------------
 
 
-.. figure:: ../../images/Romi_pinout.png
+.. figure:: ../../images/shoe1.jpg
+   :align: center
+   :height: 500px
+   :alt: alternate text
+
+.. figure:: ../../images/shoe2.jpg
    :align: center
    :height: 500px
    :alt: alternate text
