@@ -24,3 +24,10 @@ Aubrey write here I dont remeber much about this topic
 Finite State Machine Calculations
 ----------------------------------
 
+.. math::
+   \boxed{\hat{y} = C \hat{x} + D u}
+
+.. math::
+
+   \boxed{\dot{\hat{x}} = (A - L C)\hat{x} + (B - L D)u + L y}
+
