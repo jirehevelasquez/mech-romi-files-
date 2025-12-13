@@ -25,7 +25,6 @@ Finite State Machine Calculations
 ----------------------------------
 
 .. math::
-
    X =
    \begin{bmatrix}
       \Omega_L \\
@@ -34,14 +33,12 @@ Finite State Machine Calculations
       \psi
    \end{bmatrix},
    \qquad
-
    U =
    \begin{bmatrix}
       V_L \\
       V_R
    \end{bmatrix},
    \qquad
-
    Y =
    \begin{bmatrix}
       S_L \\
