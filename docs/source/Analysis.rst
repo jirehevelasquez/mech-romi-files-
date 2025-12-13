@@ -25,7 +25,36 @@ Finite State Machine Calculations
 ----------------------------------
 
 .. math::
+
+   X =
+   \begin{bmatrix}
+      \Omega_L \\
+      \Omega_R \\
+      S \\
+      \psi
+   \end{bmatrix},
+   \qquad
+
+   U =
+   \begin{bmatrix}
+      V_L \\
+      V_R
+   \end{bmatrix},
+   \qquad
+
+   Y =
+   \begin{bmatrix}
+      S_L \\
+      S_R \\
+      \psi \\
+      \dot{\psi}
+   \end{bmatrix}.
+
+
+
+.. math::
    \boxed{\hat{y} = C \hat{x} + D u}
+
 
 .. math::
 
