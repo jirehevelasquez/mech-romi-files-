@@ -1,5 +1,8 @@
 Analysis
 ======================
+
+Overview
+------------------
 For an in depth description of the analysis that we performed to characterise the dynamics of romi please reference the "ME-405 tuning" file located in our Github repository under calculations. A quick high level summary of the actions we performed include several expereimetal trials and data proccessing to identify the most accurate time constant for each motor. Aswell as identify what KP amd KI values ( Proportional and Integral gains) created the best dynamics with little overshoot and good steady state values.
 
 Motor Time Constant calculations 
