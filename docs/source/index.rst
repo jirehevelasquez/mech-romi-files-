@@ -19,7 +19,6 @@ Contents
    Wiring diagram
    Tasks
    Code
-   calcs
    Issues
    videos
    Analysis
