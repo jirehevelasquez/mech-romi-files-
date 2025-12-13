@@ -9,7 +9,7 @@ Nucleo micro-controller pinout
     :height: 500px
     :alt: alternate text
 
-For the pin designations we used where the ones for the morph board.(dark blue labels)
+For the pin designations, we used the ones for the morph board (dark blue labels).
 
 
 Wiring table
@@ -20,4 +20,4 @@ Wiring table
     :height: 500px
     :alt: alternate text
 
-This figure illustates the pins that we used on the nucleo board aswell as what those pins where connected to. We also identified which timers the encoder and motors used for better organization.
+This figure illustrates the pins that we used on the Nucleo board as well as what those pins were connected to. We also identified which timers the encoder and motors used for better organization.
