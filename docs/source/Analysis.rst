@@ -24,6 +24,8 @@ The IMU we used was the BNO055 9-axis sensor. Although this IMU continuously cal
 Finite State Machine Calculations
 
 To begin to make a state-estimation machine for Romi, we first needed to fully characterize the physical dynamics of Romi, which is a 2-wheel-drive robot that is not holonomic. We began by calculating the velocity of the center of mass of Romi relative to both wheels and identified basic equations that relate both the rotational velocity of Romi and its translational velocity as a function of the wheel velocities. These equations are represented in our X_dot variable, where X represents our wheel positions for both left and right motors, heading value, and arc distance. U represents the inputs into our system, which are the left and right voltage inputs from the motor driver. The Y variable represents the outputs of our system, which are the net distance each wheel has rotated (read from the encoders), as well as the yaw and yaw rate, which can be read from the IMU. The discrete state estimation that we used employs matrices A_d, B_d, and C_d, which represent the discretized versions of these matrices. For a more in-depth explanation, please reference the MATLAB script in the repository under calculations.
+
+
 .. math::
 
    X =
