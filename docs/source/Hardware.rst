@@ -39,7 +39,12 @@ shoe of brian
 --------------------------
 
 
-.. figure:: ../../images/Romi_pinout.png
+.. figure:: ../../images/shoe1.png
+   :align: center
+   :height: 500px
+   :alt: alternate text
+
+.. figure:: ../../images/shoe2.png
    :align: center
    :height: 500px
    :alt: alternate text
