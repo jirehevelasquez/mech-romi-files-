@@ -39,12 +39,12 @@ shoe of brian
 --------------------------
 
 
-.. figure:: ../../images/shoe1.jpeg
+.. figure:: ../../images/shoe1.jpg
    :align: center
    :height: 500px
    :alt: alternate text
 
-.. figure:: ../../images/shoe2.jpeg
+.. figure:: ../../images/shoe2.jpg
    :align: center
    :height: 500px
    :alt: alternate text
