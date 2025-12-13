@@ -91,7 +91,7 @@ Implements the high-level state machine that decides what Romi should be doing r
 
 Finite state machine
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. figure:: ../../images/task7_fst.png
+.. figure:: ../../images/task8.png
    :align: center
    :height: 500px
    :alt: alternate text
