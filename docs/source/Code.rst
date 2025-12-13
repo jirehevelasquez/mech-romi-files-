@@ -52,7 +52,7 @@ Task 6 file (Light)
 Task 7 file (IMU)
 -----------------
 
-.. literalinclude:: ../../code/main.py
+.. literalinclude:: ../../code/Main.py
    :language: python
    :linenos:
 
@@ -60,7 +60,7 @@ Task 7 file (IMU)
 Task 8 file (track)
 -------------------
 
-.. literalinclude:: ../../code/track.py
+.. literalinclude:: ../../code/Track.py
    :language: python
    :linenos:
 
