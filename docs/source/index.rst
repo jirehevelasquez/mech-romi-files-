@@ -16,13 +16,12 @@ Contents
 
    Introduction
    Hardware
-   Wiring diagram
+   Wiring Diagram
    Tasks
    Code
-   calcs
-   Issues
    Analysis
-   videos
+   Videos
+   Issues
    usage
    api
    
