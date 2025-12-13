@@ -23,7 +23,7 @@ Aubrey write here I dont remeber much about this topic
 
 Finite State Machine Calculations
 ----------------------------------
-To begin to make a state estimation machine for Romi, we first needed to fully characterize the physical dynamics of Romi, which are that romi is a 2 wheel drive robot that is not holonomic. We began by calculating the velocity of the center of mass of romi relative to both wheels and identifyied basic equations that relate both the rotational velocity of romi, and its translational velocity as a function of the wheel velocitys. These equations are represented in our X_dot variable, where X represents our wheel positions for both left and right motors, heading value, and arc distance.
+To begin to make a state estimation machine for Romi, we first needed to fully characterize the physical dynamics of Romi, which are that romi is a 2 wheel drive robot that is not holonomic. We began by calculating the velocity of the center of mass of romi relative to both wheels and identifyied basic equations that relate both the rotational velocity of romi, and its translational velocity as a function of the wheel velocitys. These equations are represented in our X_dot variable, where X represents our wheel positions for both left and right motors, heading value, and arc distance. U represents the inputs into our system which represent the left and right voltage inputs from the motor driver. The Y variable represents the outputs of our system which are the net distance each wheel has rotated which are read from the encoders. Aswell as the yaw, and yaw rate which can be read from the IMU. The discreate state estimation that we used uses matrices, A_d, B_d, and C_d which represent the discretized versions of these matrices. For a more indepth examplantion please reverance the matlab scrip in the repository under calculations.
 
 .. math::
 
@@ -67,6 +67,7 @@ To begin to make a state estimation machine for Romi, we first needed to fully c
       0                   & 0
    \end{bmatrix}
    U
+
 
 .. math::
 
