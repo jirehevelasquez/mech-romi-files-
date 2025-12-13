@@ -21,8 +21,8 @@ Contents
    Code
    calcs
    Issues
-   Analysis
    videos
+   Analysis
    usage
    api
    
