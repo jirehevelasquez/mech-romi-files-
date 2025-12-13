@@ -19,7 +19,7 @@ In our code, we calibrated our light sensors using both our UI_gen file and our 
 
 IMU Calibration
 --------------------------------
-Aubrey write here I dont remeber much about this topic
+The IMU we used was the BNO055 9-axis sensor. Although this IMU would continuously calibrate itself when used in IMU mode, we created a text document called calibration.txt that held the calibration offset coefficients for the accelerometer, gyroscope, and accelerometer radius. These calibration values were found experimentally with the Romi we used in the track space we used and stored in the text file. In our IMU task in our main file, these values are read from the text file and applied to the IMU once Romi is commanded to start the course.
 
 Finite State Machine Calculations
 ----------------------------------
