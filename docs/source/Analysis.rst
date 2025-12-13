@@ -90,6 +90,8 @@ To begin to make a state estimation machine for Romi, we first needed to fully c
 
 
 
+
+
 .. math::
    \boxed{\hat{y} = C \hat{x} + D u}
 
