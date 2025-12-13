@@ -3,7 +3,7 @@ Tasks
 
 1. data_collec_gen
 ------------------
-Continuously samples important shared variables from the rest of the system (wheel velocities, motor efforts, estimated states like Xhat, line centroid, path state, etc.) and packages them into a compact stream. This stream is then sent over USB or Bluetooth so you can capture it on a laptop for plotting and analysis. The task is mainly for debugging and tuning: it lets you see how Romi’s internal signals evolve over time when running the course. It usually runs at a lower rate than the control loops so it doesn’t overload the CPU or the serial link.
+Continuously samples important shared variables from the rest of the system (wheel velocities, motor efforts, estimated states like X̂, line centroid, path state, etc.) and packages them into a compact stream. This stream is then sent over USB or Bluetooth so you can capture it on a laptop for plotting and analysis. The task is mainly for debugging and tuning; it lets you see how Romi’s internal signals evolve over time when running the course. It usually runs at a lower rate than the control loops so it doesn’t overload the CPU or the serial link.
 
 Finite state machine
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -51,7 +51,7 @@ Finite state machine
 
 5. PI_con
 ------------------------------
-The PI task runs the proportional–integral (PI) control loop that turns errors into stable motor commands.It repeatedly compares a setpoint (what you want – speed, heading, or line position) to a measurement (what Romi is actually doing) to compute an error. The task then applies a proportional term (reacts to the current error) and an integral term (reacts to the accumulated past error) to generate a control output. That output is sent to the motor effort shares (or steering command), keeping Romi on target while reducing steady-state error and smoothing out its motion.
+The PI task runs the proportional–integral (PI) control loop that turns errors into stable motor commands. It repeatedly compares a setpoint (what you want—speed, heading, or line position) to a measurement (what Romi is actually doing) to compute an error. The task then applies a proportional term (reacts to the current error) and an integral term (reacts to the accumulated past error) to generate a control output. That output is sent to the motor effort shares (or steering command), keeping Romi on target while reducing steady-state error and smoothing out its motion.
 
 Finite state machine
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -75,7 +75,7 @@ Finite state machine
 
 7. IMU
 ------------------------------------------
-Handles communication with the IMU over I²C, including initialization, configuration, and regular sensor reads. It pulls gyro and accelerometer measurements, possibly applies calibration offsets or simple filtering, and writes cleaned values into shared variables. The state estimator can then use those IMU signals (for yaw rate, for example) to improve heading estimation. In turn, that more accurate heading can drive behaviors like precise 90° turns or detecting when Romi has rotated enough to move to the next track state. It also handles the mathamatical computations for the state estimation machines and stores them in the appropriate shared value.
+Handles communication with the IMU over I²C, including initialization, configuration, and regular sensor reads. It pulls gyro and accelerometer measurements, applies calibration offsets or simple filtering, and writes cleaned values into shared variables. The state estimator can then use those IMU signals (for yaw rate, for example) to improve heading estimation. In turn, that more accurate heading can drive behaviors like precise 90° turns or detecting when Romi has rotated enough to move to the next track state. It also handles the mathematical computations for the state estimation machines and stores them in the appropriate shared value.
 
 Finite state machine
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -87,7 +87,7 @@ Finite state machine
 
 8. Track
 -----------------------------------------
-Implements the high-level state machine that decides what Romi should be doing right now along the course. It uses signals like Xpos, Ypos, net distance, heading, and sometimes light information to detect key regions: normal line following, splits, tight-turn zones, straight-ahead gaps with no line, wall-approach, turning around obstacles, etc. For each state or “phase,” it sets shared variables like PATH_STATE, bias terms, or special flags that tell other tasks (especially light_gen and the motor control) how to behave. This task is essentially Romi’s “strategy brain” for the specific track layout.
+Implements the high-level state machine that decides what Romi should be doing at any moment along the course. It uses signals like Xpos, Ypos, net distance, heading, and sometimes light information to detect key regions: normal line following, splits, tight-turn zones, straight-ahead gaps with no line, wall approach, turning around obstacles, etc. For each state or “phase,” it sets shared variables like PATH_STATE, bias terms, or special flags that tell other tasks (especially light_gen and the motor control) how to behave. This task is essentially Romi’s “strategy brain” for the specific track layout. 
 
 Finite state machine
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
