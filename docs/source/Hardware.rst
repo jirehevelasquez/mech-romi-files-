@@ -35,7 +35,7 @@ link: https://www.st.com/en/evaluation-tools/nucleo-l476rg.html
    :alt: alternate text
 
 
-shoe of brian
+Shoe of Brian
 --------------------------
 
 
